@@ -1,0 +1,22 @@
+local factories = {'house1', 'house2', 'house3'}
+
+function init(self)
+    math.randomseed(os.time())
+    math.random()
+    self.i = math.random(#factories)
+    msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
+end
+
+function on_input(self, action_id, action)
+    if action_id == hash("touch") and action.pressed then
+        print("Touch!")
+    end
+end
+
+function on_message(self, message_id, message, sender)
+    if message_id == hash("placeholder/init") then
+        self.i = self.i + 1
+        collectionfactory.create('#factory_' .. factories[self.i % #factories + 1], go.get(message.go, 'position'))
+        go.delete(message.go, true)
+    end
+end

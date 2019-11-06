@@ -1,0 +1,15 @@
+images {
+  image: "/assets/bg.png"
+}
+images {
+  image: "/assets/house1.png"
+}
+images {
+  image: "/assets/house2.png"
+}
+images {
+  image: "/assets/house3.png"
+}
+margin: 2
+extrude_borders: 0
+inner_padding: 0
