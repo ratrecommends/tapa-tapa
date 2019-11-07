@@ -1,6 +1,15 @@
+go.property('direction', vmath.quat())
+
+function init(self) 
+    msg.post("/sys", "placeholder/init", {go = msg.url('.')})
+end
+
 function on_message(self, message_id, message, sender)
-	-- pprint({self, message_id, message, sender})
-	if message_id == hash('pressed') then
-		go.animate('.', 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(), go.EASING_INBACK, 0.5)
-	end
+    if message_id == hash('house/hide') then
+        go.animate(self.view, 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(), go.EASING_INBACK, 0.5)
+        msg.post(self.animal, 'animal/walk', {direction = self.direction})
+    elseif message_id == hash('house/init') then
+        self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position())[hash('/go')]
+        self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')})
+    end
 end

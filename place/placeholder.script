@@ -1,3 +1,0 @@
-function init(self)
-	msg.post("/sys", "placeholder/init", {go = msg.url('.')})
-end

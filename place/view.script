@@ -1,0 +1,8 @@
+go.property("owner", msg.url())
+
+function on_message(self, message_id, message)
+	if message_id == hash('pressed') then
+		msg.post(self.owner, 'house/hide')
+		-- msg.post(self.owner, message_id, message)
+	end
+end

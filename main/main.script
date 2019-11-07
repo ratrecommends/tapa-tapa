@@ -1,16 +1,23 @@
-local factories = {'house1', 'house2', 'house3'}
+local houses = {'house1', 'house2', 'house3'}
+local animals = {'chair', 'chick', 'dog'}
 
 function init(self)
     math.randomseed(os.time())
     math.random()
-    self.i = math.random(#factories)
+    self.house_index = math.random(#houses)
+    self.animal_index = math.random(#animals)
     msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 end
 
 function on_message(self, message_id, message, sender)
     if message_id == hash("placeholder/init") then
-        self.i = self.i + 1
-        collectionfactory.create('#factory_' .. factories[self.i % #factories + 1], go.get(message.go, 'position'))
-        go.delete(message.go, true)
+        self.house_index = self.house_index + 1
+        self.animal_index = self.animal_index + 1
+        msg.post(sender, 'house/init', {
+            house = houses[self.house_index % #houses + 1],
+            animal = animals[self.animal_index % #animals + 1]
+        })
+        -- collectionfactory.create('#factory_' .. houses[self.house_index % #houses + 1], go.get(message.go, 'position'))
+        -- go.delete(message.go, true)
     end
 end

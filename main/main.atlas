@@ -10,6 +10,15 @@ images {
 images {
   image: "/assets/house3.png"
 }
+images {
+  image: "/assets/chair.png"
+}
+images {
+  image: "/assets/chick.png"
+}
+images {
+  image: "/assets/dog.png"
+}
 margin: 2
 extrude_borders: 0
 inner_padding: 0
