@@ -1,0 +1,6 @@
+function on_message(self, message_id, message, sender)
+	-- pprint({self, message_id, message, sender})
+	if message_id == hash('pressed') then
+		go.animate('.', 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(), go.EASING_INBACK, 0.5)
+	end
+end
