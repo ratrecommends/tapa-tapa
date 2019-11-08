@@ -1,15 +1,27 @@
 go.property('direction', vmath.quat())
 
 function init(self) 
-    msg.post("/sys", "placeholder/init", {go = msg.url('.')})
+    self.state = 'shown'
+    msg.post("/sys", "placeholder/init")
 end
 
 function on_message(self, message_id, message, sender)
-    if message_id == hash('house/hide') then
+    if message_id == hash('house/hide') and self.state == 'shown' then
+        self.state = 'hidden'
+        timer.delay(5, false, function() msg.post('/sys', 'placeholder/init') end)
         go.animate(self.view, 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(), go.EASING_INBACK, 0.5)
         msg.post(self.animal, 'animal/walk', {direction = self.direction})
     elseif message_id == hash('house/init') then
-        self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position())[hash('/go')]
-        self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')})
+        if self.state == 'hidden' then 
+            go.delete(self.view, true)
+            self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')}, vmath.vector3())
+            go.animate(self.view, 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(1,1,1), go.EASING_OUTBACK, 0.5, 0, function() 
+                self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,0,0.1))[hash('/go')]
+                self.state = 'shown'
+            end)
+        else 
+            self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')})
+            self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,0,0.1))[hash('/go')]
+        end
     end
 end
