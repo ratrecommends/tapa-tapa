@@ -16,6 +16,11 @@ instances {
   component_properties {
     id: "script"
     properties {
+      id: "useViewArea"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+    properties {
       id: "viewArea"
       value: "1136.0, 640.0, 0.0"
       type: PROPERTY_TYPE_VECTOR3
@@ -27,12 +32,12 @@ instances {
     }
     properties {
       id: "fixedArea"
-      value: "false"
+      value: "true"
       type: PROPERTY_TYPE_BOOLEAN
     }
     properties {
       id: "fixedWidth"
-      value: "true"
+      value: "false"
       type: PROPERTY_TYPE_BOOLEAN
     }
   }
