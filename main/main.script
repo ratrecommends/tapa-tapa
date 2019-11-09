@@ -11,15 +11,25 @@ function init(self)
     -- msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 end
 
-function on_input(self, action_id, action) 
-    -- pprint(rendercam.screen_to_world_2d(action.screen_x, action.screen_y))
+local function process_touch(action) 
     if action.pressed then 
         local pos = rendercam.screen_to_world_2d(action.screen_x, action.screen_y)
         local x = physics.raycast(pos - vmath.vector3(0, 0, -100), pos + vmath.vector3(0, 0, -100), {hash("default")})
         if x then 
             msg.post(x.id, 'pressed')
         end
-        -- pprint({action_id, action})
+    end
+end
+
+function on_input(self, action_id, action) 
+    -- pprint(rendercam.screen_to_world_2d(action.screen_x, action.screen_y))
+    if action_id == hash('touch') then 
+        process_touch(action)
+    elseif action_id == hash('multitouch') then
+        -- pprint(action.touch)
+        for _, action in pairs(action.touch) do
+            process_touch(action)
+        end
     end
 end
 

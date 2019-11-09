@@ -30,6 +30,11 @@ instances {
       value: "false"
       type: PROPERTY_TYPE_BOOLEAN
     }
+    properties {
+      id: "fixedWidth"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
   }
   scale3 {
     x: 1.0
