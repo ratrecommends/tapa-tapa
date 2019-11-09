@@ -71,4 +71,5 @@ type = 3D
 show_fullscreen_button = 1
 scale_mode = downscale_fit
 show_made_with_defold = 1
+archive_location_suffix = ?v=1.0
 

@@ -152,6 +152,7 @@ archive_location_prefix = archive
 show_fullscreen_button = 1
 show_made_with_defold = 1
 scale_mode = downscale_fit
+archive_location_suffix = ?v=1.0
 
 [particle_fx]
 max_count = 64
