@@ -16,8 +16,18 @@ instances {
   component_properties {
     id: "script"
     properties {
-      id: "fixedAspectRatio"
-      value: "true"
+      id: "viewArea"
+      value: "1136.0, 640.0, 0.0"
+      type: PROPERTY_TYPE_VECTOR3
+    }
+    properties {
+      id: "expandView"
+      value: "false"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+    properties {
+      id: "fixedArea"
+      value: "false"
       type: PROPERTY_TYPE_BOOLEAN
     }
   }

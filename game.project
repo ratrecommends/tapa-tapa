@@ -15,6 +15,7 @@ width = 1136
 height = 640
 update_frequency = 60
 vsync = 0
+high_dpi = 1
 
 [ios]
 app_icon_120x120 = /assets/app_icons/icon_120.png
@@ -65,4 +66,9 @@ gravity_y = -1000.0
 scale = 0.01
 debug = 0
 type = 3D
+
+[html5]
+show_fullscreen_button = 1
+scale_mode = downscale_fit
+show_made_with_defold = 1
 
