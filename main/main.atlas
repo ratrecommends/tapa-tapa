@@ -1,5 +1,41 @@
 images {
+  image: "/assets/balloon.png"
+}
+images {
+  image: "/assets/bear.png"
+}
+images {
   image: "/assets/bg.png"
+}
+images {
+  image: "/assets/bike.png"
+}
+images {
+  image: "/assets/bird.png"
+}
+images {
+  image: "/assets/cat.png"
+}
+images {
+  image: "/assets/chair.png"
+}
+images {
+  image: "/assets/chiken.png"
+}
+images {
+  image: "/assets/cow.png"
+}
+images {
+  image: "/assets/crab.png"
+}
+images {
+  image: "/assets/dog.png"
+}
+images {
+  image: "/assets/ghost.png"
+}
+images {
+  image: "/assets/gingerbread.png"
 }
 images {
   image: "/assets/house1.png"
@@ -11,13 +47,16 @@ images {
   image: "/assets/house3.png"
 }
 images {
-  image: "/assets/chair.png"
+  image: "/assets/mushroom.png"
 }
 images {
-  image: "/assets/chick.png"
+  image: "/assets/owl.png"
 }
 images {
-  image: "/assets/dog.png"
+  image: "/assets/pumpkin.png"
+}
+images {
+  image: "/assets/teapot.png"
 }
 margin: 2
 extrude_borders: 0

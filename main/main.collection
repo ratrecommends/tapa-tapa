@@ -67,7 +67,7 @@ collection_instances {
       id: "house"
       properties {
         id: "direction"
-        value: "0.0, 0.0, 0.9659258, -0.258819"
+        value: "0.0, 0.0, 0.9914449, 0.1305262"
         type: PROPERTY_TYPE_QUAT
       }
     }
@@ -98,7 +98,7 @@ collection_instances {
       id: "house"
       properties {
         id: "direction"
-        value: "0.0, 0.0, -0.7071068, 0.7071068"
+        value: "0.0, 0.0, -0.8870108, 0.4617486"
         type: PROPERTY_TYPE_QUAT
       }
     }
@@ -129,7 +129,7 @@ collection_instances {
       id: "house"
       properties {
         id: "direction"
-        value: "0.0, 0.0, -0.1305262, 0.9914449"
+        value: "0.0, 0.0, 0.1305262, 0.9914449"
         type: PROPERTY_TYPE_QUAT
       }
     }

@@ -1,6 +1,23 @@
 local rendercam = require('rendercam.rendercam')
 local houses = {'house1', 'house2', 'house3'}
-local animals = {'chair', 'chick', 'dog'}
+local animals = {
+    'baloon', 
+    'bear', 
+    'bike', 
+    'bird', 
+    'cat', 
+    'chair', 
+    'chicken', 
+    'cow', 
+    'crab', 
+    'dog', 
+    'ghost', 
+    'gingerbread', 
+    'mushroom', 
+    'owl', 
+    'pumpkin',
+    'teapot'
+}
 
 function init(self)
     math.randomseed(os.time())
