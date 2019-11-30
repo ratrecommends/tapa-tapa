@@ -7,7 +7,7 @@ end
 
 function on_message(self, message_id, message, sender)
     if message_id == hash('animal/walk') then
-        go.animate('view', 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(1), go.EASING_OUTBACK, 0.5)
+        go.animate('view', 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(0.8), go.EASING_OUTBACK, 0.5)
         go.animate('view', 'rotation', go.PLAYBACK_ONCE_FORWARD, vmath.quat_rotation_z(math.rad(-15)), go.EASING_INOUTQUINT, self.speed / 2, self.delay, function () 
             go.animate("view", "rotation", go.PLAYBACK_LOOP_PINGPONG, vmath.quat_rotation_z(math.rad(15)), go.EASING_INOUTQUINT, self.speed)
             

@@ -1,6 +1,6 @@
 [project]
 title = tapa tapa
-version = 2019-11-30
+version = 2019-11-30/2
 write_log = 0
 compress_archive = 1
 
