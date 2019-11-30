@@ -1,6 +1,6 @@
 [project]
 title = tapa tapa
-version = 1.0
+version = 2019-11-30
 write_log = 0
 compress_archive = 1
 
@@ -14,6 +14,7 @@ update_frequency = 60
 vsync = 0
 display_profiles = /builtins/render/default.display_profilesc
 dynamic_orientation = 0
+clear_color = 0
 
 [physics]
 type = 3D

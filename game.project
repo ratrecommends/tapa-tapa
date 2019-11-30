@@ -1,6 +1,7 @@
 [project]
 title = tapa tapa
 dependencies = https://github.com/rgrams/rendercam/archive/v1.0.2.zip
+version = 2019-11-30
 
 [bootstrap]
 main_collection = /main/main.collectionc
