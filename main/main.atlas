@@ -58,6 +58,75 @@ images {
 images {
   image: "/assets/teapot.png"
 }
+images {
+  image: "/tree/tree_01.PNG"
+}
+images {
+  image: "/tree/tree_10.PNG"
+}
+images {
+  image: "/tree/tree_11.PNG"
+}
+images {
+  image: "/tree/tree_12.PNG"
+}
+images {
+  image: "/tree/tree_13.PNG"
+}
+images {
+  image: "/tree/tree_14.PNG"
+}
+images {
+  image: "/tree/tree_15.PNG"
+}
+images {
+  image: "/tree/tree_16.PNG"
+}
+images {
+  image: "/tree/tree_17.PNG"
+}
+images {
+  image: "/tree/tree_18.PNG"
+}
+images {
+  image: "/tree/tree_19.PNG"
+}
+images {
+  image: "/tree/tree_02.PNG"
+}
+images {
+  image: "/tree/tree_20.PNG"
+}
+images {
+  image: "/tree/tree_21.PNG"
+}
+images {
+  image: "/tree/tree_22.PNG"
+}
+images {
+  image: "/tree/tree_23.PNG"
+}
+images {
+  image: "/tree/tree_03.PNG"
+}
+images {
+  image: "/tree/tree_04.PNG"
+}
+images {
+  image: "/tree/tree_05.PNG"
+}
+images {
+  image: "/tree/tree_06.PNG"
+}
+images {
+  image: "/tree/tree_07.PNG"
+}
+images {
+  image: "/tree/tree_08.PNG"
+}
+images {
+  image: "/tree/tree_09.PNG"
+}
 margin: 2
 extrude_borders: 0
 inner_padding: 0

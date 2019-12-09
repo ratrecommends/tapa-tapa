@@ -1,8 +1,11 @@
 go.property('direction', vmath.quat())
 
-function init(self) 
+local z = require("main.z_order")
+
+function init(self)
     self.state = 'shown'
     msg.post("/sys", "placeholder/init")
+    z.update()
 end
 
 function on_message(self, message_id, message, sender)
@@ -16,12 +19,12 @@ function on_message(self, message_id, message, sender)
             go.delete(self.view, true)
             self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')}, vmath.vector3())
             go.animate(self.view, 'scale', go.PLAYBACK_ONCE_FORWARD, vmath.vector3(1,1,1), go.EASING_OUTBACK, 0.5, 0, function() 
-                self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,0,0.1))[hash('/go')]
+                self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,-1,0))[hash('/go')]
                 self.state = 'shown'
             end)
         else 
             self.view = factory.create('#factory_' .. message.house, nil, nil, {owner = msg.url('.')})
-            self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,0,0.1))[hash('/go')]
+            self.animal = collectionfactory.create('#collectionfactory_' .. message.animal, go.get_position() - vmath.vector3(0,-1,0))[hash('/go')]
         end
     end
 end

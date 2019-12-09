@@ -47,6 +47,466 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "tree_01"
+  prototype: "/tree/tree_01.go"
+  position {
+    x: 754.0
+    y: 572.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_02"
+  prototype: "/tree/tree_02.go"
+  position {
+    x: 648.0
+    y: 553.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_03"
+  prototype: "/tree/tree_03.go"
+  position {
+    x: 1074.0
+    y: 492.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_04"
+  prototype: "/tree/tree_04.go"
+  position {
+    x: 1023.0
+    y: 375.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_05"
+  prototype: "/tree/tree_05.go"
+  position {
+    x: 1155.0
+    y: 363.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_06"
+  prototype: "/tree/tree_06.go"
+  position {
+    x: 1265.0
+    y: 181.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_07"
+  prototype: "/tree/tree_07.go"
+  position {
+    x: 1089.0
+    y: 45.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_08"
+  prototype: "/tree/tree_08.go"
+  position {
+    x: 1157.0
+    y: -54.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_09"
+  prototype: "/tree/tree_09.go"
+  position {
+    x: 1267.0
+    y: -103.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_10"
+  prototype: "/tree/tree_10.go"
+  position {
+    x: 1112.0
+    y: -213.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_11"
+  prototype: "/tree/tree_11.go"
+  position {
+    x: 951.0
+    y: -119.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_12"
+  prototype: "/tree/tree_12.go"
+  position {
+    x: 813.0
+    y: -223.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_13"
+  prototype: "/tree/tree_13.go"
+  position {
+    x: 957.0
+    y: -213.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_14"
+  prototype: "/tree/tree_14.go"
+  position {
+    x: 447.0
+    y: 595.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_15"
+  prototype: "/tree/tree_15.go"
+  position {
+    x: 317.0
+    y: 547.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_16"
+  prototype: "/tree/tree_16.go"
+  position {
+    x: -134.0
+    y: 398.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_17"
+  prototype: "/tree/tree_17.go"
+  position {
+    x: 49.0
+    y: 357.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_18"
+  prototype: "/tree/tree_18.go"
+  position {
+    x: -70.0
+    y: 163.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_19"
+  prototype: "/tree/tree_19.go"
+  position {
+    x: 118.0
+    y: 129.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_20"
+  prototype: "/tree/tree_20.go"
+  position {
+    x: -137.0
+    y: 44.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_21"
+  prototype: "/tree/tree_21.go"
+  position {
+    x: -15.0
+    y: -177.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_22"
+  prototype: "/tree/tree_22.go"
+  position {
+    x: 153.0
+    y: -292.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tree_23"
+  prototype: "/tree/tree_23.go"
+  position {
+    x: 353.0
+    y: -302.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 collection_instances {
   id: "house"
   collection: "/place/house.collection"
@@ -204,6 +664,49 @@ embedded_instances {
     x: 0.0
     y: 0.0
     z: -0.5
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "trees"
+  children: "tree_01"
+  children: "tree_02"
+  children: "tree_03"
+  children: "tree_04"
+  children: "tree_05"
+  children: "tree_06"
+  children: "tree_07"
+  children: "tree_08"
+  children: "tree_09"
+  children: "tree_10"
+  children: "tree_11"
+  children: "tree_12"
+  children: "tree_13"
+  children: "tree_14"
+  children: "tree_15"
+  children: "tree_16"
+  children: "tree_17"
+  children: "tree_18"
+  children: "tree_19"
+  children: "tree_20"
+  children: "tree_21"
+  children: "tree_22"
+  children: "tree_23"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0

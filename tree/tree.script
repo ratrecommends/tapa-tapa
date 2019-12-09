@@ -1,0 +1,5 @@
+local z = require "main.z_order"
+
+function init(self)
+    z.update()
+end

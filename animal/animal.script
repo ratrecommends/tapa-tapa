@@ -1,8 +1,11 @@
 go.property('speed', 1.7)
 go.property('delay', 2)
 
+local z = require("main.z_order")
+
 function init(self)
     go.set_scale(0.1, 'view')
+    z.update()
 end
 
 function on_message(self, message_id, message, sender)
@@ -14,10 +17,16 @@ function on_message(self, message_id, message, sender)
         end)
         timer.delay(self.delay * 1.25, false, function() 
             local delta = vmath.rotate(message.direction, vmath.vector3(1000, 0, 0))
-            go.animate('.', 'position', go.PLAYBACK_ONCE_FORWARD, go.get_position() + delta, go.EASING_LINEAR, 10, 0, function()
+            local target_position = go.get_position() + delta
+            target_position.z = z.get(target_position.y)
+            go.animate('.', 'position', go.PLAYBACK_ONCE_FORWARD, target_position, go.EASING_LINEAR, 10, 0, function()
                 go.delete('.', true)
             end)
         end)
         go.animate("view", "position.y", go.PLAYBACK_LOOP_PINGPONG, 10, go.EASING_INOUTBOUNCE, self.speed * 0.5, self.delay)
     end
+end
+
+function update(self, dt)
+    z.update()
 end
